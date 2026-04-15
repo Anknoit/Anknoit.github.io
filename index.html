@@ -515,6 +515,19 @@
       .mobile-menu { padding: 16px 20px; }
       .about, .expertise, .services, .work, .industries { padding: 72px 0; }
       .cta-section { padding: 88px 0; }
+
+    /* ── CFA CALLOUT ── */
+    .cfa-callout {
+      margin-top: 28px; padding: 24px 28px;
+      border-left: 3px solid var(--red);
+      background: var(--bg-off); border-radius: 0 3px 3px 0;
+    }
+    .cfa-callout-label {
+      display: block; font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 10px;
+    }
+    .cfa-callout p { font-size: 0.93rem; line-height: 1.8; color: var(--grey); margin: 0; }
     }
   </style>
 </head>
@@ -529,16 +542,16 @@
         <a href="#expertise">Expertise</a>
         <a href="#work">Work</a>
         <!-- Social icons -->
-        <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/ankit-jha-707825195/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
-        <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+        <a href="https://github.com/Anknoit" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
         </a>
-        <a href="YOUR_MEDIUM_URL" target="_blank" rel="noopener" class="social-icon" aria-label="Medium">
+        <a href="https://medium.com/@anknoit" target="_blank" rel="noopener" class="social-icon" aria-label="Medium">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
         </a>
-        <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+        <a href="https://www.youtube.com/@code-poetry" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
         <a href="#contact" class="nav-cta">Let's Talk</a>
@@ -586,30 +599,30 @@
             Ankit<br><span>Jha</span>
           </h1>
           <p class="hero-title reveal reveal-d1">
-            DIAMETER &nbsp;·&nbsp; AAA &nbsp;·&nbsp; IPLMS &nbsp;·&nbsp; IoT &nbsp;&nbsp;|&nbsp;&nbsp; MVNOs, ISPs &amp; 5G
+            Telecom Core &amp; IoT Engineer &nbsp;&nbsp;|&nbsp;&nbsp; DIAMETER &nbsp;·&nbsp; AAA &nbsp;·&nbsp; Kafka &nbsp;·&nbsp; Distributed Systems
           </p>
           <p class="hero-desc reveal reveal-d2">
             I build the infrastructure that keeps telecom networks running — authentication systems, policy control, compliance tooling, and distributed data pipelines that operators depend on at scale.
           </p>
           <div class="hero-actions reveal reveal-d3">
-            <a href="#contact" class="btn btn-primary">
-              Start a Conversation
+            <a href="https://calendly.com/anknoit/let-s-brainstorm" class="btn btn-primary">
+              Let's Brainstorm
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <a href="#work" class="btn btn-outline">View Work</a>
           </div>
           <div class="hero-socials reveal reveal-d3">
             <span class="social-label">Find me on</span>
-            <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/ankit-jha-707825195/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
-            <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+            <a href="https://github.com/Anknoit" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             </a>
-            <a href="YOUR_MEDIUM_URL" target="_blank" rel="noopener" class="social-icon" aria-label="Medium">
+            <a href="https://medium.com/@anknoit" target="_blank" rel="noopener" class="social-icon" aria-label="Medium">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
             </a>
-            <a href="YOUR_YOUTUBE_URL" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+            <a href="https://www.youtube.com/@code-poetry" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
           </div>
@@ -882,8 +895,9 @@
           <p class="about-intro reveal reveal-d1">
             I also build <strong>distributed data platforms and IoT systems</strong> — streaming pipelines with Kafka, large-scale processing with PySpark and Databricks, and microservice architectures that handle the volume and velocity telecom and IoT environments actually produce. If your network generates data faster than you can process it, that's a problem I've solved before.
           </p>
-          <div class="about-cfa reveal reveal-d2">
-            <strong>Currently:</strong> Exploring the intersection of telecom economics and capital allocation through the CFA programme — because understanding where money flows in infrastructure is as important as understanding the infrastructure itself.
+          <div class="cfa-callout reveal reveal-d2">
+            <span class="cfa-callout-label">CFA Programme — Currently Pursuing</span>
+            <p>Most engineers understand how infrastructure works. The CFA programme is teaching me why capital flows where it does — which investments operators will actually make, which SLA commitments are financially sustainable, and where the next hundred billion in telecom and IoT infrastructure will be spent. Network engineering and capital allocation intersect more than either profession admits. Understanding both sides of that table is a deliberate choice, not a distraction.</p>
           </div>
         </div>
       </div>
@@ -1081,12 +1095,14 @@
               <span class="work-type">IPLMS &amp; AAA</span>
               <span class="work-year">Telecom Startup</span>
             </div>
+            <span class="card-domain telecom">Telecom</span>
             <h3 class="work-title">IPLMS Platform &amp; DIAMETER AAA — Built from Scratch</h3>
-            <p class="work-desc">Designed and built a full IP Log Management System from the ground up, alongside DIAMETER AAA implementation across Gx, Gy, and Rx interfaces — for a telecom startup handling real production traffic. Compliance requirements were architected in from day one. System operates under DoT/TRAI regulatory standards.</p>
+            <p class="work-desc">Telecom operators must submit IP session logs to the Department of Telecommunications on demand — but this startup had no compliant IPLMS or AAA infrastructure, and buying a vendor solution was not financially viable at their scale. I designed and built the entire IPLMS platform and DIAMETER protocol stack from scratch: Gx for policy control, Gy for online charging, and Rx for resource reservation — each interface implemented and tested against live production traffic. Compliance logging, retention windows, and regulatory reporting were designed in from day one, ensuring every DoT/TRAI requirement was satisfied before the first commercial subscriber was onboarded. The system went live handling real operator traffic and remains the authentication and compliance infrastructure the operator runs their network on today.</p>
             <div class="work-tags">
               <span class="tag">DIAMETER</span><span class="tag">Gx · Gy · Rx</span>
               <span class="tag">IPLMS</span><span class="tag">DoT Compliance</span><span class="tag">Production</span>
             </div>
+            <button class="work-view-btn" onclick="openModal('iplms-aaa')">View Project Details →</button>
           </div>
         </div>
 
@@ -1151,11 +1167,13 @@
               <span class="work-type">5G Core</span>
               <span class="work-year">Private 5G</span>
             </div>
+            <span class="card-domain telecom">Telecom</span>
             <h3 class="work-title">5G AAA &amp; Policy Control</h3>
             <p class="work-desc">Core network architecture for a private 5G deployment — AUSF, UDM, and PCRF implementation with policy control designed to scale without manual intervention.</p>
             <div class="work-tags">
               <span class="tag">AUSF</span><span class="tag">UDM</span><span class="tag">PCRF</span><span class="tag">5G SA</span>
             </div>
+            <button class="work-view-btn" onclick="openModal('5g-policy')">View Project Details →</button>
           </div>
         </div>
 
@@ -1222,11 +1240,179 @@
               <span class="work-type">AI Analytics</span>
               <span class="work-year">Telecom / IoT</span>
             </div>
+            <span class="card-domain data">Telecom / IoT</span>
             <h3 class="work-title">AI-Powered Network Analytics</h3>
-            <p class="work-desc">ML pipeline processing raw telecom and IoT telemetry — anomaly detection, traffic forecasting, and subscriber behaviour modelling that operators can actually act on.</p>
+            <p class="work-desc">Network operators were accumulating years of telemetry from telecom and IoT sources, but data was processed in batch and surfaced through static dashboards that told you what happened — not what was about to. I built a streaming pipeline on Kafka for real-time telemetry ingestion, PySpark Structured Streaming for enrichment and feature engineering, and Databricks as the compute and storage layer — with anomaly detection running continuously on live KPI streams and a traffic forecasting model producing 24-hour load predictions per network segment. Operators can now see degradation patterns hours before user impact, and capacity decisions are driven by forward-looking forecasts rather than reactive incident reports.</p>
             <div class="work-tags">
               <span class="tag">Kafka</span><span class="tag">PySpark</span><span class="tag">Databricks</span><span class="tag">IoT</span>
             </div>
+          </div>
+        </div>
+
+
+        <!-- ── PLATFORM 1: 5G Network Slicing Monetization ── -->
+        <div class="work-card reveal">
+          <div class="work-visual" style="background:#070707; min-height:220px;">
+            <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <defs>
+                <style>@keyframes sl1{to{stroke-dashoffset:-18}} .sl1{stroke-dasharray:4 4;animation:sl1 1.8s linear infinite}</style>
+                <pattern id="sl-d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r=".55" fill="rgba(255,255,255,0.04)"/></pattern>
+                <filter id="sl-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="300" height="220" fill="#070707"/>
+              <rect width="300" height="220" fill="url(#sl-d)"/>
+              <!-- NL Input -->
+              <g transform="translate(12,92)"><rect width="68" height="36" rx="3" fill="#0e0e0e" stroke="#282828" stroke-width="1"/><text x="34" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6.5" fill="rgba(255,255,255,0.35)">"sub-5ms for</text><text x="34" y="25" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6.5" fill="rgba(255,255,255,0.35)">500 robots"</text></g>
+              <line x1="80" y1="110" x2="94" y2="110" stroke="#1a050e" stroke-width="1.5"/>
+              <line x1="80" y1="110" x2="94" y2="110" stroke="rgba(176,16,48,0.5)" stroke-width="1.5" class="sl1"/>
+              <polygon points="92,106 100,110 92,114" fill="rgba(176,16,48,0.6)"/>
+              <!-- LLM Engine -->
+              <g transform="translate(100,86)" filter="url(#sl-g)"><rect width="70" height="48" rx="3" fill="#6b0b1e" stroke="#b01030" stroke-width="1.5"/><text x="35" y="17" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8" font-weight="700" fill="#fff">AI Intent</text><text x="35" y="30" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7" fill="rgba(255,255,255,0.65)">LLM + RAG</text><text x="35" y="42" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="5.5" fill="rgba(255,255,255,0.4)">3GPP Rel-17/18</text></g>
+              <line x1="170" y1="110" x2="184" y2="110" stroke="#1a050e" stroke-width="1.5"/>
+              <line x1="170" y1="110" x2="184" y2="110" stroke="rgba(176,16,48,0.5)" stroke-width="1.5" class="sl1"/>
+              <polygon points="182,106 190,110 182,114" fill="rgba(176,16,48,0.6)"/>
+              <!-- Slice output -->
+              <g transform="translate(190,90)"><rect width="100" height="40" rx="3" fill="#b01030" stroke="#d01842" stroke-width="1.5"/><text x="50" y="16" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8" font-weight="700" fill="#fff">5G Slice</text><text x="50" y="30" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.7)">S-NSSAI · 5QI · AMBR</text></g>
+              <!-- Labels -->
+              <text x="46" y="82" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6" fill="rgba(255,255,255,0.2)">Enterprise</text>
+              <text x="135" y="74" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6" fill="rgba(255,255,255,0.2)">Provisioned in &lt;60s</text>
+              <text x="150" y="200" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.12)" letter-spacing="1.5">5G SLICING MONETIZATION PLATFORM</text>
+            </svg>
+          </div>
+          <div class="work-body">
+            <div class="work-meta"><span class="work-type">5G · AI</span><span class="work-year">Platform</span></div>
+            <span class="card-domain telecom">Telecom</span>
+            <h3 class="work-title">5G Network Slicing Monetization Platform</h3>
+            <p class="work-desc">Operators have invested $500B+ in 5G but ARPU remains flat because connectivity is still sold as a commodity. This platform lets enterprises describe connectivity needs in plain English — an LLM+RAG engine (trained over 3GPP Rel-17/18 specs) translates intent directly into S-NSSAI, 5QI, AMBR, and GFBR parameters, provisioning a dedicated slice in under 60 seconds. SLA Assurance AI detects breach risk sub-minute; a Contextual Bandit RL agent optimises pricing per slice tier; CAMARA-compliant APIs expose slice control to third-party developers.</p>
+            <div class="work-tags"><span class="tag">5G SA</span><span class="tag">Network Slicing</span><span class="tag">LLM + RAG</span><span class="tag">NEF</span><span class="tag">CAMARA</span></div>
+            <button class="work-view-btn" onclick="openModal('slicing-platform')">View Project Details →</button>
+          </div>
+        </div>
+
+        <!-- ── PLATFORM 2: IoT Operations Intelligence ── -->
+        <div class="work-card reveal reveal-d1">
+          <div class="work-visual" style="background:#070707; min-height:220px;">
+            <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <defs>
+                <style>@keyframes iot2{to{stroke-dashoffset:-18}} .iot2{stroke-dasharray:4 4;animation:iot2 2s linear infinite}</style>
+                <pattern id="io-d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r=".55" fill="rgba(255,255,255,0.04)"/></pattern>
+                <filter id="io-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="300" height="220" fill="#070707"/>
+              <rect width="300" height="220" fill="url(#io-d)"/>
+              <!-- BMS -->
+              <g transform="translate(12,64)"><rect width="54" height="22" rx="3" fill="#111" stroke="#282828" stroke-width="1"/><text x="27" y="15" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.5)">BMS</text></g>
+              <g transform="translate(12,96)"><rect width="54" height="22" rx="3" fill="#111" stroke="#282828" stroke-width="1"/><text x="27" y="15" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.5)">HVAC</text></g>
+              <g transform="translate(12,128)"><rect width="54" height="22" rx="3" fill="#111" stroke="#282828" stroke-width="1"/><text x="27" y="15" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.5)">NMS</text></g>
+              <!-- Lines to AI core -->
+              <line x1="66" y1="75"  x2="108" y2="107" stroke="rgba(176,16,48,0.3)" stroke-width="1" class="iot2"/>
+              <line x1="66" y1="107" x2="108" y2="110" stroke="rgba(176,16,48,0.3)" stroke-width="1" class="iot2"/>
+              <line x1="66" y1="139" x2="108" y2="113" stroke="rgba(176,16,48,0.3)" stroke-width="1" class="iot2"/>
+              <!-- AI Core -->
+              <g transform="translate(108,86)" filter="url(#io-g)"><rect width="80" height="52" rx="3" fill="#6b0b1e" stroke="#b01030" stroke-width="1.5"/><text x="40" y="17" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8" font-weight="700" fill="#fff">AI Core</text><text x="40" y="30" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.6)">LSTM · GNN</text><text x="40" y="42" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.6)">LLM+RAG</text></g>
+              <!-- Output: Chat -->
+              <line x1="188" y1="112" x2="204" y2="100" stroke="rgba(176,16,48,0.4)" stroke-width="1.5" class="iot2"/>
+              <line x1="188" y1="112" x2="204" y2="120" stroke="rgba(176,16,48,0.4)" stroke-width="1.5" class="iot2"/>
+              <g transform="translate(204,64)"><rect width="84" height="36" rx="3" fill="#0e0e0e" stroke="#b01030" stroke-width="1" stroke-dasharray="3 2"/><text x="42" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6.5" fill="rgba(176,16,48,0.6)">"HVAC-3B bearing</text><text x="42" y="25" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6.5" fill="rgba(176,16,48,0.6)">wear — fix in 90s"</text></g>
+              <g transform="translate(204,106)"><rect width="84" height="22" rx="3" fill="#111" stroke="#282828" stroke-width="1"/><text x="42" y="15" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7" fill="rgba(255,255,255,0.45)">Auto Work Order</text></g>
+              <text x="150" y="200" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.12)" letter-spacing="1.5">IoT OPERATIONS INTELLIGENCE</text>
+            </svg>
+          </div>
+          <div class="work-body">
+            <div class="work-meta"><span class="work-type">IoT · AI</span><span class="work-year">Platform</span></div>
+            <span class="card-domain iot">IoT</span>
+            <h3 class="work-title">IoT Operations Intelligence Platform</h3>
+            <p class="work-desc">Facility managers and NOC teams work from siloed systems that generate raw alarms without context — manual fault investigations take 40–60 minutes per incident. This platform unifies BMS sensors (HVAC, energy, access, elevators) and NMS devices (routers, BTS/RAN, servers, UPS) under a single Chat-to-Fix interface: operators describe a fault in plain English, the LLM+RAG engine retrieves device history and vendor runbooks, and returns a specific resolution in under 90 seconds. An LSTM model predicts hardware failures 24–72 hours ahead with 87% precision and auto-generates prioritised work orders; a GNN traces alarm cascades to the single root cause in under 8 seconds.</p>
+            <div class="work-tags"><span class="tag">MQTT</span><span class="tag">Kafka</span><span class="tag">LLM + RAG</span><span class="tag">LSTM</span><span class="tag">GNN</span><span class="tag">BACnet</span></div>
+            <button class="work-view-btn" onclick="openModal('iot-ops')">View Project Details →</button>
+          </div>
+        </div>
+
+        <!-- ── PLATFORM 3: AI Range Detection & Outage Prediction ── -->
+        <div class="work-card reveal reveal-d2">
+          <div class="work-visual" style="background:#070707; min-height:220px;">
+            <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <defs>
+                <style>@keyframes rd1{to{stroke-dashoffset:-18}} .rd1{stroke-dasharray:4 4;animation:rd1 2s linear infinite}</style>
+                <pattern id="rd-d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r=".55" fill="rgba(255,255,255,0.04)"/></pattern>
+                <filter id="rd-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="300" height="220" fill="#070707"/>
+              <rect width="300" height="220" fill="url(#rd-d)"/>
+              <!-- Data inputs stacked left -->
+              <g transform="translate(10,55)"><rect width="52" height="18" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="26" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">RAN KPIs</text></g>
+              <g transform="translate(10,80)"><rect width="52" height="18" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="26" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">IPLMS</text></g>
+              <g transform="translate(10,105)"><rect width="52" height="18" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="26" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">Weather</text></g>
+              <g transform="translate(10,130)"><rect width="52" height="18" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="26" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">NMS Alarms</text></g>
+              <!-- Lines to ensemble -->
+              <g stroke="rgba(176,16,48,0.3)" stroke-width="1" class="rd1">
+                <line x1="62" y1="64"  x2="96" y2="102"/>
+                <line x1="62" y1="89"  x2="96" y2="106"/>
+                <line x1="62" y1="114" x2="96" y2="110"/>
+                <line x1="62" y1="139" x2="96" y2="114"/>
+              </g>
+              <!-- 4-Model Ensemble -->
+              <g transform="translate(96,88)" filter="url(#rd-g)"><rect width="78" height="48" rx="3" fill="#b01030" stroke="#d01842" stroke-width="1.5"/><text x="39" y="17" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7.5" font-weight="700" fill="#fff">4-Model ML</text><text x="39" y="30" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.7)">LSTM·GNN·RF</text><text x="39" y="42" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.55)">Isolation Forest</text></g>
+              <!-- Risk Score output -->
+              <line x1="174" y1="112" x2="192" y2="112" stroke="rgba(176,16,48,0.5)" stroke-width="1.5" class="rd1"/>
+              <polygon points="190,108 198,112 190,116" fill="rgba(176,16,48,0.6)"/>
+              <g transform="translate(198,88)" filter="url(#rd-g)">
+                <rect width="90" height="48" rx="3" fill="#6b0b1e" stroke="#b01030" stroke-width="1.5"/>
+                <text x="45" y="17" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="22" font-weight="700" fill="#fff">91</text>
+                <text x="45" y="36" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7" fill="rgba(255,255,255,0.6)">HIGH RISK</text>
+                <text x="45" y="46" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="5.5" fill="rgba(255,255,255,0.35)">Cell A · 72hr window</text>
+              </g>
+              <text x="150" y="200" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.12)" letter-spacing="1.5">AI RANGE DETECTION & OUTAGE PREDICTION</text>
+            </svg>
+          </div>
+          <div class="work-body">
+            <div class="work-meta"><span class="work-type">AI · Telecom</span><span class="work-year">Platform</span></div>
+            <span class="card-domain telecom">Telecom</span>
+            <h3 class="work-title">AI Range Detection &amp; Outage Prediction</h3>
+            <p class="work-desc">Telecom operators are entirely reactive — they learn about coverage failures when users complain, after the damage is done. This platform inverts that model: a 4-model ML ensemble (LSTM/TFT for time-series KPI forecasting, GNN for topology cascade propagation, Spatial RF Model for coverage hole prediction, Isolation Forest for real-time anomaly detection) fuses RAN KPIs, IPLMS session flows, weather/terrain data, UE probes, and NMS alarm history to produce a 0–100 outage risk score per cell site every hour. SHAP explainability surfaces the top 3 contributing risk factors; an LLM narrates the risk in plain English and recommends a proactive intervention — before a single user drops a call.</p>
+            <div class="work-tags"><span class="tag">LSTM/TFT</span><span class="tag">GNN</span><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Kafka</span><span class="tag">PySpark</span></div>
+            <button class="work-view-btn" onclick="openModal('range-detection')">View Project Details →</button>
+          </div>
+        </div>
+
+        <!-- ── PLATFORM 4: AURA ── -->
+        <div class="work-card reveal">
+          <div class="work-visual" style="background:#070707; min-height:220px;">
+            <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+              <defs>
+                <style>@keyframes au1{to{stroke-dashoffset:-18}} .au1{stroke-dasharray:4 4;animation:au1 2.2s linear infinite}</style>
+                <pattern id="au-d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r=".55" fill="rgba(255,255,255,0.04)"/></pattern>
+                <filter id="au-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <rect width="300" height="220" fill="#070707"/>
+              <rect width="300" height="220" fill="url(#au-d)"/>
+              <!-- Source boxes -->
+              <g transform="translate(8,50)"><rect width="48" height="20" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="24" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">5G KPIs</text></g>
+              <g transform="translate(8,78)"><rect width="48" height="20" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="24" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">CDRs</text></g>
+              <g transform="translate(8,106)"><rect width="48" height="20" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="24" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">SLA Data</text></g>
+              <g transform="translate(8,134)"><rect width="48" height="20" rx="2" fill="#111" stroke="#222" stroke-width="1"/><text x="24" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(255,255,255,0.4)">Financials</text></g>
+              <!-- Kafka bus -->
+              <line x1="56" y1="100" x2="80" y2="100" stroke="rgba(176,16,48,0.3)" stroke-width="1" class="au1"/>
+              <g transform="translate(80,88)" filter="url(#au-g)"><rect width="46" height="24" rx="3" fill="#6b0b1e" stroke="#b01030" stroke-width="1.5"/><text x="23" y="16" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7.5" font-weight="700" fill="#fff">Kafka</text></g>
+              <line x1="126" y1="100" x2="146" y2="100" stroke="rgba(176,16,48,0.35)" stroke-width="1.5" class="au1"/>
+              <!-- Delta Lake -->
+              <g transform="translate(146,84)" filter="url(#au-g)"><rect width="60" height="32" rx="3" fill="#b01030" stroke="#d01842" stroke-width="1.5"/><text x="30" y="14" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="8" font-weight="700" fill="#fff">Delta</text><text x="30" y="27" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="7" fill="rgba(255,255,255,0.7)">Lake</text></g>
+              <line x1="206" y1="100" x2="222" y2="100" stroke="rgba(176,16,48,0.35)" stroke-width="1.5" class="au1"/>
+              <!-- BI Outputs -->
+              <g transform="translate(222,54)"><rect width="70" height="18" rx="2" fill="#0e0e0e" stroke="#b01030" stroke-width="1" stroke-dasharray="3 2"/><text x="35" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(176,16,48,0.6)">Revenue Impact</text></g>
+              <g transform="translate(222,78)"><rect width="70" height="18" rx="2" fill="#0e0e0e" stroke="#b01030" stroke-width="1" stroke-dasharray="3 2"/><text x="35" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(176,16,48,0.6)">Churn Prediction</text></g>
+              <g transform="translate(222,102)"><rect width="70" height="18" rx="2" fill="#0e0e0e" stroke="#b01030" stroke-width="1" stroke-dasharray="3 2"/><text x="35" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(176,16,48,0.6)">Exec NL Chat</text></g>
+              <g transform="translate(222,126)"><rect width="70" height="18" rx="2" fill="#0e0e0e" stroke="#b01030" stroke-width="1" stroke-dasharray="3 2"/><text x="35" y="13" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="6" fill="rgba(176,16,48,0.6)">SLA Financials</text></g>
+              <text x="150" y="200" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.12)" letter-spacing="1.5">AURA — AI UNIFIED REAL-TIME ANALYTICS</text>
+            </svg>
+          </div>
+          <div class="work-body">
+            <div class="work-meta"><span class="work-type">BI · AI</span><span class="work-year">Platform</span></div>
+            <span class="card-domain data">Telecom / BI</span>
+            <h3 class="work-title">AURA — AI Unified Real-time Analytics for 5G</h3>
+            <p class="work-desc">Telecom operators hold some of the richest data estates in the enterprise world — 5G KPI telemetry, CDRs covering hundreds of millions of subscribers, SLA logs, financial datasets — yet the vast majority never reaches the executives who need to make capital allocation decisions. AURA consolidates all network and business data into a Databricks Delta Lake lakehouse (Bronze/Silver/Gold), processed in near real-time by Apache Spark, with five AI models running continuously: XGBoost+LSTM churn prediction, TFT ARPU forecasting, Causal ML revenue attribution, Monte Carlo capacity ROI simulation, and a RAG-grounded executive LLM that answers any business question with auto-generated charts in under 10 seconds.</p>
+            <div class="work-tags"><span class="tag">Databricks</span><span class="tag">Kafka</span><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span class="tag">Causal ML</span><span class="tag">MLflow</span></div>
+            <button class="work-view-btn" onclick="openModal('aura')">View Project Details →</button>
           </div>
         </div>
 
@@ -1265,10 +1451,10 @@
       <div class="cta-inner">
         <span class="label reveal">Open to Freelance</span>
         <h2 class="cta-title reveal reveal-d1">Let's Build Something<br><span>That Scales.</span></h2>
-        <p class="cta-sub reveal reveal-d2">Whether you're launching an MVNO, upgrading your ISP core, or need a DIAMETER/AAA specialist for a production deployment — I'd like to hear what you're working on.</p>
+        <p class="cta-sub reveal reveal-d2">Whether you're building telecom core infrastructure, designing an IoT data platform, or need expertise across DIAMETER, 5G, Kafka, or distributed systems — I'd like to hear what you're working on.</p>
         <div class="reveal reveal-d3">
-          <a href="mailto:ankitjha8891@gmail.com" class="btn btn-primary" style="font-size:0.88rem; padding:15px 34px;">
-            Get In Touch
+          <a href="https://calendly.com/anknoit/let-s-brainstorm" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.88rem; padding:15px 34px;">
+            Book a Meeting
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -1334,6 +1520,112 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
     reveals.forEach(el => io.observe(el));
 
+
+    // ── PROJECT MODAL ──
+    const projectData = {
+      'iplms-aaa': {
+        type: 'IPLMS & DIAMETER AAA  ·  Telecom',
+        title: 'IPLMS Platform & DIAMETER AAA — Built from Scratch',
+        desc: 'A telecom startup needed to meet DoT/TRAI regulatory requirements from day one with no existing AAA infrastructure. I designed and built the entire IPLMS platform and DIAMETER protocol stack from scratch — Gx for policy control, Gy for online charging, Rx for resource reservation — with compliance logging and reporting architected in from the first line of code, not retrofitted later. The system went live on real production traffic and remains the authentication and compliance infrastructure the operator runs their network on today.',
+        tags: ['DIAMETER', 'Gx · Gy · Rx', 'IPLMS', 'DoT Compliance', 'RADIUS', 'Production'],
+        domain: 'Telecom Startup', status: 'Production'
+      },
+      '5g-policy': {
+        type: '5G Core  ·  Telecom',
+        title: '5G AAA & Policy Control',
+        desc: 'Private 5G deployments need carrier-grade authentication and dynamic policy enforcement — but off-the-shelf solutions rarely integrate cleanly with a standalone 5G SA core. I implemented AUSF for mutual authentication, UDM as the unified subscriber data repository, and PCRF for policy-based QoS control, with per-subscriber session parameters updating automatically as load changes. The result is a policy-controlled network that scales without manual intervention.',
+        tags: ['AUSF', 'UDM', 'PCRF', '5G SA', 'AMF'],
+        domain: 'Private 5G', status: 'Production'
+      },
+      'ai-analytics': {
+        type: 'AI Analytics  ·  Telecom / IoT',
+        title: 'AI-Powered Network Analytics',
+        desc: 'Built a streaming pipeline on Kafka for real-time telemetry ingestion, PySpark Structured Streaming for enrichment and feature engineering, and Databricks as the compute and storage layer — with anomaly detection running continuously on live KPI streams and a traffic forecasting model producing 24-hour load predictions per network segment. Operators can now see degradation patterns hours before user impact.',
+        tags: ['Kafka', 'PySpark', 'Databricks', 'IoT', 'ML Pipelines', 'Anomaly Detection'],
+        domain: 'Telecom / IoT', status: 'Production'
+      },
+      'slicing-platform': {
+        type: '5G Network Slicing  ·  AI · Telecom',
+        title: '5G Network Slicing Monetization Platform',
+        desc: 'Operators have invested $500B+ in 5G globally but ARPU remains flat because connectivity is still sold as a commodity. This platform lets enterprises describe connectivity needs in plain English — an LLM+RAG engine trained over 3GPP Rel-17/18 specs translates intent directly into S-NSSAI, 5QI, AMBR, and GFBR parameters, provisioning a dedicated 5G network slice in under 60 seconds. SLA Assurance AI (Isolation Forest on live KPI streams) detects breach risk sub-minute. A Contextual Bandit RL agent optimises pricing per slice tier. CAMARA-compliant APIs expose slice control to third-party developers.',
+        tags: ['5G SA', 'Network Slicing', 'LLM + RAG', 'NEF / NSMF', 'CAMARA', 'AMF/SMF/UPF', 'Kafka', 'React'],
+        domain: 'Telecom', status: 'In Development'
+      },
+      'iot-ops': {
+        type: 'IoT Operations Intelligence  ·  AI · IoT',
+        title: 'IoT Operations Intelligence Platform',
+        desc: 'Facility managers and NOC teams work from entirely separate siloed systems — none of which explain why a fault occurred or what to do about it. Manual investigations take 40–60 minutes per incident. This platform unifies BMS sensors (HVAC, energy, access control, elevators, fire) and NMS devices (routers, BTS/RAN, servers, UPS, firewalls) under a single Chat-to-Fix interface: operators describe a fault in plain English, the LLM+RAG engine retrieves device history and vendor runbooks, and returns a specific resolution in under 90 seconds. An LSTM model predicts hardware failures 24–72 hours ahead with 87% precision and auto-generates prioritised work orders with parts lists. A GNN traces alarm cascades to the single root cause in under 8 seconds.',
+        tags: ['MQTT', 'Kafka', 'LLM + RAG', 'LSTM', 'GNN', 'BACnet / Modbus', 'FastAPI', 'LangChain'],
+        domain: 'IoT / Smart Buildings / NMS', status: 'In Development'
+      },
+      'range-detection': {
+        type: 'AI Range Detection  ·  Telecom',
+        title: 'AI Range Detection & Outage Prediction Platform',
+        desc: 'Telecom operators are entirely reactive — they learn about coverage failures when users complain. This platform inverts that model: a 4-model ML ensemble fuses RAN KPIs (RSRP, SINR, PRB utilisation), IPLMS session flows, weather/terrain data, UE probes, and NMS alarm history to produce a 0–100 outage risk score per cell site every hour with a 24–72 hour prediction window. SHAP explainability identifies the top 3 contributing risk factors per cell. An LLM narrates the risk in plain English and recommends a proactive intervention — before a single user drops a call.',
+        tags: ['LSTM / TFT', 'GNN', 'Spatial RF Model', 'XGBoost', 'Isolation Forest', 'SHAP', 'Kafka', 'PySpark'],
+        domain: 'Telecom', status: 'In Development'
+      },
+      'aura': {
+        type: 'AURA — Business Intelligence  ·  Telecom / AI',
+        title: 'AURA — AI Unified Real-time Analytics for 5G Networks',
+        desc: 'Telecom operators hold some of the richest data estates in the enterprise world — 5G KPI telemetry, CDRs covering hundreds of millions of subscribers, SLA logs, financial datasets — yet the vast majority never reaches the executives who need it. CFOs allocate capital without quantified revenue upside; network directors argue for investment without business-impact evidence. AURA consolidates all data into a Databricks Delta Lake lakehouse processed in near real-time by Apache Spark, with five AI models running continuously: XGBoost+LSTM churn prediction, TFT ARPU forecasting, Causal ML revenue attribution, Monte Carlo capacity ROI simulation, and a RAG-grounded executive LLM that answers any business question with auto-generated charts in under 10 seconds.',
+        tags: ['Databricks', 'Delta Lake', 'Kafka', 'Spark', 'Causal ML', 'MLflow', 'React 18', 'FastAPI'],
+        domain: 'Telecom / Business Intelligence', status: 'In Development'
+      }
+    };
+
+    function openModal(id) {
+      const p = projectData[id];
+      if (!p) return;
+      document.getElementById('modalType').textContent  = p.type;
+      document.getElementById('modalTitle').textContent = p.title;
+      document.getElementById('modalDesc').textContent  = p.desc;
+      document.getElementById('modalTags').innerHTML =
+        p.tags.map(t => '<span class="tag">' + t + '</span>').join('');
+      const camIcon = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>';
+      document.getElementById('modalScreenshots').innerHTML =
+        '<div class="screenshot-slot"><div class="screenshot-placeholder">' + camIcon + '<span>Add Screenshot</span></div></div>' +
+        '<div class="screenshot-slot"><div class="screenshot-placeholder">' + camIcon + '<span>Add Screenshot</span></div></div>';
+      document.getElementById('modalMeta').innerHTML =
+        '<div class="modal-meta-item"><strong>Domain</strong>' + p.domain + '</div>' +
+        '<div class="modal-meta-item"><strong>Status</strong>' + p.status + '</div>';
+      document.getElementById('projectModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('projectModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function handleOverlayClick(e) {
+      if (e.target.id === 'projectModal') closeModal();
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
   </script>
+
+  <!-- ══ PROJECT MODAL ══ -->
+  <div class="modal-overlay" id="projectModal" onclick="handleOverlayClick(event)">
+    <div class="modal-panel" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <span class="modal-type" id="modalType"></span>
+          <h2 class="modal-title" id="modalTitle"></h2>
+        </div>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-screenshots" id="modalScreenshots"></div>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
