@@ -1192,7 +1192,223 @@
                   .b1{animation:bar1 2.2s ease-in-out infinite}
                   .b2{animation:bar2 2.6s ease-in-out infinite}
                   .b3{animation:bar3 2s ease-in-out infinite}
-                </style>
+              
+    /* ════════════════════════════════
+       PROJECT MODAL
+    ════════════════════════════════ */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9000;
+      background: rgba(8,8,8,0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .modal-overlay.active { display: flex; }
+
+    .modal-panel {
+      position: relative;
+      background: #ffffff;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 880px;
+      margin: auto;
+      box-shadow: 0 48px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(0,0,0,0.06);
+      animation: modalIn 0.24s cubic-bezier(0.16,1,0.3,1);
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(24px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0)   scale(1);    }
+    }
+
+    /* Header */
+    .modal-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 32px 36px 24px;
+      border-bottom: 1px solid #efefef;
+    }
+    .modal-type {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .modal-title {
+      font-family: var(--font-serif);
+      font-size: 1.38rem;
+      font-weight: 500;
+      color: var(--black);
+      line-height: 1.32;
+      margin: 0;
+    }
+    .modal-close {
+      flex-shrink: 0;
+      margin-top: 2px;
+      width: 38px;
+      height: 38px;
+      border-radius: 4px;
+      border: 1.5px solid #e0e0e0;
+      background: transparent;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      color: #888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.18s, color 0.18s, background 0.18s;
+    }
+    .modal-close:hover {
+      border-color: var(--red);
+      color: var(--red);
+      background: rgba(176,16,48,0.04);
+    }
+
+    /* Body */
+    .modal-body {
+      padding: 28px 36px 36px;
+    }
+
+    /* Screenshot slots */
+    .modal-screenshots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .screenshot-slot {
+      aspect-ratio: 16 / 9;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1.5px dashed #ddd;
+      background: #f9f9f9;
+    }
+    .screenshot-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .screenshot-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #c4c4c4;
+    }
+    .screenshot-placeholder svg { opacity: 0.6; }
+    .screenshot-placeholder span {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.04em;
+      color: #c4c4c4;
+    }
+
+    /* Description */
+    .modal-desc {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      line-height: 1.82;
+      color: #4a4a4a;
+      margin: 0 0 22px;
+    }
+
+    /* Tags */
+    .modal-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 24px;
+    }
+    .modal-tags .tag {
+      font-size: 0.72rem;
+      padding: 4px 11px;
+    }
+
+    /* Meta row */
+    .modal-meta {
+      display: flex;
+      gap: 36px;
+      padding-top: 20px;
+      border-top: 1px solid #efefef;
+    }
+    .modal-meta-item {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      color: #999;
+    }
+    .modal-meta-item strong {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 3px;
+    }
+
+    /* View button on cards */
+    .work-view-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 18px;
+      padding: 9px 18px;
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--red);
+      border: 1.5px solid rgba(176,16,48,0.28);
+      border-radius: 3px;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.18s, border-color 0.18s;
+      text-decoration: none;
+    }
+    .work-view-btn:hover {
+      background: rgba(176,16,48,0.05);
+      border-color: var(--red);
+    }
+
+    /* Domain badges */
+    .card-domain {
+      display: inline-block;
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 2px 9px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+    .card-domain.telecom { background: rgba(176,16,48,0.08); color: var(--red); }
+    .card-domain.iot     { background: rgba(0,130,200,0.09); color: #0078c8; }
+    .card-domain.data    { background: rgba(30,160,80,0.09); color: #1a8a40; }
+
+    /* Responsive modal */
+    @media (max-width: 640px) {
+      .modal-header { padding: 24px 20px 18px; }
+      .modal-body   { padding: 20px 20px 28px; }
+      .modal-title  { font-size: 1.15rem; }
+      .modal-screenshots { grid-template-columns: 1fr; }
+      .modal-meta   { flex-direction: column; gap: 14px; }
+    }
+  </style>
                 <pattern id="dai" width="20" height="20" patternUnits="userSpaceOnUse">
                   <circle cx="10" cy="10" r=".55" fill="rgba(255,255,255,0.045)"/>
                 </pattern>
@@ -1246,11 +1462,12 @@
             <div class="work-tags">
               <span class="tag">Kafka</span><span class="tag">PySpark</span><span class="tag">Databricks</span><span class="tag">IoT</span>
             </div>
+            <button class="work-view-btn" onclick="openModal('ai-analytics')">View Project Details →</button>
           </div>
         </div>
 
 
-        <!-- ── PLATFORM 1: 5G Network Slicing Monetization ── -->
+        <!-- ══ PLATFORM 1: 5G Network Slicing Monetization ── -->
         <div class="work-card reveal">
           <div class="work-visual" style="background:#070707; min-height:220px;">
             <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
