@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ankit Jha — Product Engineer · Energy & Commodity Markets</title>
-  <meta name="description" content="Product engineer building data systems for energy and commodity markets. ETRM development, commodity analytics, production infrastructure. CFA candidate." />
+  <title>Ankit Jha — AI Data Engineer · Energy & Commodity Markets</title>
+  <meta name="description" content="AI Data Engineer building data systems for energy and commodity markets. ETRM development, commodity analytics, production infrastructure. CFA candidate." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
@@ -486,6 +486,91 @@
     }
     .footer-links a:hover { color: #fff; }
 
+    /* ─── TECH STACK ────────────────────────────────────────────────── */
+    .tech-stack { padding: 100px 0; background: var(--bg); }
+    .tech-stack-header { margin-bottom: 52px; }
+    .tech-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2px; background: var(--border); border: 1px solid var(--border);
+    }
+    .tech-cat { background: var(--bg-off); padding: 32px 28px; transition: background 0.2s; }
+    .tech-cat:hover { background: #fff; }
+    .tech-cat-label {
+      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .tech-cat-label::after { content: ''; flex: 1; height: 1px; background: rgba(176,16,48,0.18); }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tech-tag {
+      font-size: 0.71rem; font-weight: 500; color: var(--grey);
+      background: #fff; border: 1px solid var(--border);
+      padding: 5px 11px; border-radius: 2px;
+      transition: border-color 0.18s, color 0.18s, background 0.18s;
+    }
+    .tech-tag:hover { border-color: var(--red); color: var(--red); background: rgba(176,16,48,0.03); }
+    .tech-tag.core { font-weight: 600; background: var(--black); color: #fff; border-color: var(--black); }
+    .tech-tag.core:hover { background: var(--red); border-color: var(--red); color: #fff; }
+
+    /* ─── EDUCATION ──────────────────────────────────────────────────── */
+    .education { padding: 100px 0; background: var(--bg-off); }
+    .edu-inner { display: grid; grid-template-columns: 1fr 1.3fr; gap: 80px; margin-top: 52px; align-items: start; }
+    .edu-degree-card {
+      background: var(--black); padding: 36px 32px;
+      position: relative; overflow: hidden;
+    }
+    .edu-degree-card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 4px; height: 100%; background: var(--red);
+    }
+    .edu-degree-label {
+      font-size: 0.64rem; font-weight: 600; letter-spacing: 0.16em;
+      text-transform: uppercase; color: rgba(176,16,48,0.8); margin-bottom: 18px;
+    }
+    .edu-degree-school {
+      font-family: var(--font-serif); font-size: 1.25rem; font-weight: 500;
+      color: #fff; line-height: 1.3; margin-bottom: 8px;
+    }
+    .edu-degree-sub { font-size: 0.86rem; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+    .edu-degree-dates { font-size: 0.8rem; color: rgba(255,255,255,0.35); margin-bottom: 20px; }
+    .edu-gpa-row {
+      display: flex; align-items: baseline; gap: 10px;
+      margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .edu-gpa-num {
+      font-family: var(--font-serif); font-size: 2.4rem;
+      font-weight: 500; color: var(--red); line-height: 1;
+    }
+    .edu-gpa-label {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(255,255,255,0.35);
+    }
+    .edu-certs-label {
+      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 16px;
+    }
+    .edu-certs { display: flex; flex-direction: column; gap: 1px; }
+    .edu-cert {
+      background: #fff; padding: 18px 22px;
+      border-left: 2px solid transparent;
+      transition: border-left-color 0.2s, background 0.2s;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .edu-cert:hover { border-left-color: var(--red); background: rgba(176,16,48,0.02); }
+    .edu-cert-icon {
+      width: 32px; height: 32px; background: var(--bg-off); border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 0.9rem;
+    }
+    .edu-cert-name { font-size: 0.88rem; font-weight: 600; color: var(--black); line-height: 1.3; }
+    .edu-cert-issuer { font-size: 0.75rem; color: var(--grey-light); margin-top: 3px; }
+
+    @media (max-width: 960px) {
+      .tech-grid { grid-template-columns: repeat(2, 1fr); }
+      .edu-inner { grid-template-columns: 1fr; gap: 36px; }
+    }
+    @media (max-width: 640px) { .tech-grid { grid-template-columns: 1fr; } }
+
     /* ─── REVEAL ───────────────────────────────────────────────────── */
     .reveal {
       opacity: 0; transform: translateY(24px);
@@ -547,6 +632,7 @@
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#work">Work</a>
+        <a href="#education">Education</a>
         <!-- Social icons -->
         <a href="https://www.linkedin.com/in/ankit-jha-707825195/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -575,6 +661,7 @@
     <a href="#about" onclick="closeMob()">About</a>
     <a href="#expertise" onclick="closeMob()">Expertise</a>
     <a href="#work" onclick="closeMob()">Work</a>
+    <a href="#education" onclick="closeMob()">Education</a>
     <a href="#contact" onclick="closeMob()">Let's Talk →</a>
     <div class="social-row" style="padding: 16px 0 4px; border-top: none;">
       <a href="https://www.linkedin.com/in/ankit-jha-707825195/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
@@ -599,13 +686,13 @@
 
         <div>
           <div class="hero-eyebrow reveal">
-            <span class="label">Product Engineer · Data Systems · Energy & Commodity Markets</span>
+            <span class="label">AI Data Engineer · Data Systems · Energy & Commodity Markets</span>
           </div>
           <h1 class="hero-name reveal reveal-d1">
             Ankit<br><span>Jha</span>
           </h1>
           <p class="hero-title reveal reveal-d1">
-            Product Engineer &nbsp;·&nbsp; Data Systems &nbsp;·&nbsp; Energy &amp; Commodity Markets
+            AI Data Engineer &nbsp;·&nbsp; Data Systems &nbsp;·&nbsp; Energy &amp; Commodity Markets
           </p>
           <p class="hero-desc reveal reveal-d2">
             I build production systems that process critical data at scale — the kind that operators, traders, and regulators depend on when things can't go wrong. Currently applying that to energy markets: ETRM software, commodity analytics, and the infrastructure that sits behind every trade.
@@ -961,6 +1048,96 @@
     </div>
   </section>
 
+  <!-- TECH STACK -->
+  <section class="tech-stack" id="stack">
+    <div class="container">
+      <div class="tech-stack-header reveal">
+        <span class="label">Tech Stack</span>
+        <div class="divider"></div>
+        <h2 class="section-title">Tools I Build With</h2>
+      </div>
+      <div class="tech-grid">
+
+        <div class="tech-cat reveal">
+          <div class="tech-cat-label">Languages</div>
+          <div class="tech-tags">
+            <span class="tech-tag core">Python</span>
+            <span class="tech-tag core">Golang</span>
+            <span class="tech-tag core">SQL</span>
+          </div>
+        </div>
+
+        <div class="tech-cat reveal reveal-d1">
+          <div class="tech-cat-label">AI &amp; LLM Systems</div>
+          <div class="tech-tags">
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">LangGraph</span>
+            <span class="tech-tag">OpenAI</span>
+            <span class="tech-tag">HuggingFace</span>
+            <span class="tech-tag">Ollama</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">Vector DBs</span>
+            <span class="tech-tag">Agentic Systems</span>
+          </div>
+        </div>
+
+        <div class="tech-cat reveal reveal-d2">
+          <div class="tech-cat-label">Data &amp; Analytics</div>
+          <div class="tech-tags">
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">PySpark</span>
+            <span class="tech-tag">Databricks</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">Prophet</span>
+          </div>
+        </div>
+
+        <div class="tech-cat reveal">
+          <div class="tech-cat-label">Web &amp; Infrastructure</div>
+          <div class="tech-tags">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">gRPC</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">Celery</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">Azure</span>
+          </div>
+        </div>
+
+        <div class="tech-cat reveal reveal-d1">
+          <div class="tech-cat-label">Finance &amp; Markets</div>
+          <div class="tech-tags">
+            <span class="tech-tag">DCF Modelling</span>
+            <span class="tech-tag">Sensitivity Analysis</span>
+            <span class="tech-tag">Capital Budgeting</span>
+            <span class="tech-tag">Project Finance</span>
+            <span class="tech-tag">Derivatives</span>
+            <span class="tech-tag">MCX · IEX</span>
+            <span class="tech-tag">NISM Certified</span>
+          </div>
+        </div>
+
+        <div class="tech-cat reveal reveal-d2">
+          <div class="tech-cat-label">Protocols &amp; Platforms</div>
+          <div class="tech-tags">
+            <span class="tech-tag">DIAMETER</span>
+            <span class="tech-tag">RADIUS</span>
+            <span class="tech-tag">5G Core</span>
+            <span class="tech-tag">Wireshark</span>
+            <span class="tech-tag">gNMI</span>
+            <span class="tech-tag">MQTT</span>
+            <span class="tech-tag">BACnet</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CURRENTLY BUILDING -->
   <section class="currently-building">
     <div class="container">
@@ -1303,7 +1480,8 @@
           </div>
         </div>
 
-        <div class="work-card reveal reveal-d1">
+        <!-- [HIDDEN] AI-Powered Network Analytics -->
+        <div class="work-card reveal reveal-d1" style="display:none">
           <div class="work-visual" style="background:#070707; min-height:220px;">
             <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
               <defs>
@@ -1606,8 +1784,9 @@
         </div>
 
 
+        <!-- [HIDDEN] 5G Network Slicing Monetization Platform -->
         <!-- ══ PLATFORM 1: 5G Network Slicing Monetization ── -->
-        <div class="work-card reveal">
+        <div class="work-card reveal" style="display:none">
           <div class="work-visual" style="background:#070707; min-height:220px;">
             <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
               <defs>
@@ -1687,6 +1866,7 @@
         <!-- ── PLATFORM 3: AI Range Detection & Outage Prediction ── -->
         <div class="work-card reveal reveal-d2">
           <div class="work-visual" style="background:#070707; min-height:220px;">
+            <div class="work-visual-badge" style="background:none; border:1.5px solid var(--red); color:var(--red); font-size:0.55rem; padding:4px 8px; top:12px; right:12px; letter-spacing:0.08em;">🏆 DoT 5G Hackathon</div>
             <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
               <defs>
                 <style>@keyframes rd1{to{stroke-dashoffset:-18}} .rd1{stroke-dasharray:4 4;animation:rd1 2s linear infinite}</style>
@@ -1723,6 +1903,10 @@
           </div>
           <div class="work-body">
             <div class="work-meta"><span class="work-type">AI · Telecom</span><span class="work-year">Platform</span></div>
+            <div style="display:flex; align-items:center; gap:8px; background:rgba(176,16,48,0.07); border:1px solid rgba(176,16,48,0.22); border-radius:3px; padding:8px 12px; margin-bottom:12px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#b01030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span style="font-size:0.68rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#b01030;">Selected · DoT 5G Hackathon — National Level Presentation</span>
+            </div>
             <span class="card-domain telecom">Telecom</span>
             <h3 class="work-title">AI Range Detection &amp; Outage Prediction</h3>
             <p class="work-desc">Telecom operators are entirely reactive — they learn about coverage failures when users complain, after the damage is done. This platform inverts that model: a 4-model ML ensemble (LSTM/TFT for time-series KPI forecasting, GNN for topology cascade propagation, Spatial RF Model for coverage hole prediction, Isolation Forest for real-time anomaly detection) fuses RAN KPIs, IPLMS session flows, weather/terrain data, UE probes, and NMS alarm history to produce a 0–100 outage risk score per cell site every hour. SHAP explainability surfaces the top 3 contributing risk factors; an LLM narrates the risk in plain English and recommends a proactive intervention — before a single user drops a call.</p>
@@ -1731,8 +1915,9 @@
           </div>
         </div>
 
+        <!-- [HIDDEN] AURA — AI Unified Real-time Analytics -->
         <!-- ── PLATFORM 4: AURA ── -->
-        <div class="work-card reveal">
+        <div class="work-card reveal" style="display:none">
           <div class="work-visual" style="background:#070707; min-height:220px;">
             <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;">
               <defs>
@@ -1801,6 +1986,74 @@
     </div>
   </section>
 
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="label">Education &amp; Credentials</span>
+        <div class="divider"></div>
+        <h2 class="section-title">Background</h2>
+      </div>
+      <div class="edu-inner">
+
+        <div class="reveal">
+          <div class="edu-degree-card">
+            <div class="edu-degree-label">Degree</div>
+            <div class="edu-degree-school">Bharti Vidyapeeth College of Engineering, Pune</div>
+            <div class="edu-degree-sub">Bachelor of Technology &nbsp;·&nbsp; Electrical Engineering</div>
+            <div class="edu-degree-dates">Aug 2020 – June 2024 &nbsp;·&nbsp; Pune, MH, India</div>
+            <div class="edu-gpa-row">
+              <div class="edu-gpa-num">8.92</div>
+              <div class="edu-gpa-label">GPA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-d1">
+          <div class="edu-certs-label">Certifications</div>
+          <div class="edu-certs">
+            <div class="edu-cert">
+              <div class="edu-cert-icon">📊</div>
+              <div>
+                <div class="edu-cert-name">NISM Research Analyst (Series XV)</div>
+                <div class="edu-cert-issuer">NISM — National Institute of Securities Markets</div>
+              </div>
+            </div>
+            <div class="edu-cert">
+              <div class="edu-cert-icon">🤖</div>
+              <div>
+                <div class="edu-cert-name">GenAI &amp; LLM Application Development</div>
+                <div class="edu-cert-issuer">HuggingFace · LangChain</div>
+              </div>
+            </div>
+            <div class="edu-cert">
+              <div class="edu-cert-icon">🔗</div>
+              <div>
+                <div class="edu-cert-name">Supply Chain Analytics</div>
+                <div class="edu-cert-issuer">NPTEL (Offline)</div>
+              </div>
+            </div>
+            <div class="edu-cert">
+              <div class="edu-cert-icon">🐍</div>
+              <div>
+                <div class="edu-cert-name">Python for Machine Learning</div>
+                <div class="edu-cert-issuer">Kaggle</div>
+              </div>
+            </div>
+            <div class="edu-cert">
+              <div class="edu-cert-icon">📦</div>
+              <div>
+                <div class="edu-cert-name">Client Service Delivery</div>
+                <div class="edu-cert-issuer">edX</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CTA / CONTACT -->
   <section class="cta-section" id="contact">
     <div class="container">
@@ -1828,7 +2081,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">Ankit <span>Jha</span></div>
-        <div class="footer-copy">© 2026 Ankit Jha · Product Engineer · Energy & Commodity Markets</div>
+        <div class="footer-copy">© 2026 Ankit Jha · AI Data Engineer · Energy & Commodity Markets</div>
         <div class="social-row">
           <a href="https://www.linkedin.com/in/ankit-jha-707825195/ " target="_blank" rel="noopener" class="social-icon social-icon-dark" aria-label="LinkedIn">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
